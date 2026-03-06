@@ -5,7 +5,7 @@ def exibirMenu():
     """Mostra as opções e retorna a escolha da opção"""
     # Cabeçalho
     print("\n" +"="*30)
-    print("--- ORGANIZADOR DE ESTUDOS v3.0 ---")
+    print("--- ORGANIZADOR DE ESTUDOS ---")
     print("="*30)
 
     # Menu
@@ -106,4 +106,5 @@ while True:
 
     else:
         print("Opção Inválida, tente novamente")
+
 
