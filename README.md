@@ -1,5 +1,7 @@
 # Organizador de Estudos Pessoal
 
+https://github.com/user-attachments/assets/95f2a4ad-ac72-4ad3-ab62-37ef0976434f
+
 Um assistente em Python feito para gerenciar rotinas de estudo, focado em produtuvidade e acompanhamento de progresso.
 
 ## Funcionalidades
