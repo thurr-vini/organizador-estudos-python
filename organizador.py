@@ -1,7 +1,7 @@
 import os
 
 # --- BLOCO DE FUNÇÕES ---
-def exibirMenu():
+def exibir_menu():
     """Mostra as opções e retorna a escolha da opção"""
     # Cabeçalho
     print("\n" +"="*30)
@@ -16,7 +16,7 @@ def exibirMenu():
     escolha = input("\nEscolha uma opção: ")
     return escolha
 
-def salvarEstudo(materia, minutos):
+def salvar_estudo(materia, minutos):
     """Calcula as horas, salva no arquivo e dá o feedback."""
     try:
         print("\nCategorias: [1] Teoria | [2] Prática | [3] Revisão")
@@ -38,7 +38,7 @@ def salvarEstudo(materia, minutos):
     except ValueError:
         print("\n[ERRO] Por favor, digite apenas números para o tempo!")
 
-def darIncentivo(minutos):
+def dar_incentivo(minutos):
         """Recebe o tempo e dá um incentivo baseado no tempo gasto."""
         minutos_int = int(minutos)
         horas = minutos_int / 60
@@ -51,7 +51,7 @@ def darIncentivo(minutos):
         elif horas > 3:
             print("Dica: Excelente! Você estudou acima do nível comum, parabéns!")
 
-def mostrarHistorico():
+def mostrar_historico():
     """Exibe o histórico completo dos estudos registrados, se existir."""
     print("\n--- SEU HISTÓRICO DE ESTUDOS ---")
     if os.path.exists("histórico_estudos.txt"):
@@ -61,7 +61,7 @@ def mostrarHistorico():
     else:
         print("Você ainda não registrou nenhum estudo.")
     
-def limparHstorico():
+def limpar_historico():
     """Remove o arquivo de histórico se ele existir."""
     if os.path.exists("histórico_estudos.txt"):
         confirmar = input("Tem certeza que deseja apagar TODOS os registros? (S/N):\n")
@@ -75,10 +75,11 @@ def limparHstorico():
     else:
         print("\n[ERRO] Não existe nenhum histórico para apagar.")
 
+
 # --- PROGRAMA PRINCIPAL ---
 
 while True:
-    opcao = exibirMenu() # Exibe o cabeçalho com o menu e retorna o valor da opção escolhida
+    opcao = exibir_menu() # Exibe o cabeçalho com o menu e retorna o valor da opção escolhida
 
     # Opção 1: Registrar Novo Estudo
     if opcao == "1":
@@ -87,24 +88,23 @@ while True:
         tempo_input = int(input("Quanto tempo você estudou(em minutos)?\n"))
 
         # Registrando novo estudo
-        salvarEstudo(materia_input, tempo_input)
+        salvar_estudo(materia_input, tempo_input)
 
         # Exibir dica de incentivo
-        darIncentivo(tempo_input)
+        dar_incentivo(tempo_input)
             
 
     # Opção 2: Ver histórico de Estudos
     elif opcao == "2":
-        mostrarHistorico()
+        mostrar_historico()
 
     elif opcao == "0":
         print("Saindo do programa...")
         break
 
     elif opcao == "3":
-        limparHstorico()
+        limpar_historico()
 
     else:
         print("Opção Inválida, tente novamente")
-
 
