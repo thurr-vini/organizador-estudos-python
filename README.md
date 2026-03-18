@@ -30,3 +30,6 @@ Para testar o organizador na sua máquina, siga os passos abaixo:
 1. **Clonar o repositório:**
    ```bash
    git clone [https://github.com/thurr-vini/organizador-estudos-python.git](https://github.com/thurr-vini/organizador-estudos-python.git)
+
+   Instalar a biblioteca de cores: pip install colorama
+   Executar o programa: python organizador.py
