@@ -26,9 +26,7 @@ https://github.com/user-attachments/assets/558ee090-10f2-4627-ac1d-967c6f3f5ebe
 ---
 
 ## ⚙️ Como Executar o Projeto
-
 Para testar o organizador na sua máquina, siga os passos abaixo:
-
 1. **Clonar o repositório:**
    ```bash
    git clone [https://github.com/thurr-vini/organizador-estudos-python.git](https://github.com/thurr-vini/organizador-estudos-python.git)
