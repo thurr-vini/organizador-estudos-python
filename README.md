@@ -1,20 +1,34 @@
-# Organizador de Estudos Pessoal
+# 📊 Organizador de Estudos Pessoal (v2.0)
 
-https://github.com/user-attachments/assets/95f2a4ad-ac72-4ad3-ab62-37ef0976434f
+Sistema de linha de comando (CLI) desenvolvido em **Python** para gestão de tempo e produtividade acadêmica. O projeto evoluiu de um registro simples para uma ferramenta de análise com interface colorida e relatórios automáticos por categoria.
 
-Um assistente em Python feito para gerenciar rotinas de estudo, focado em produtuvidade e acompanhamento de progresso.
+---
 
-## Funcionalidades
-* **Registro de Atividades**: Salva matéria, tempo e categoria (Teoria, Prática ou Revisão).
-* **Persistência de Dados**: Armazena o histórico em um arquivo '.txt' local.
-* **Tratamento de Erros**: Sistema preparado para entradas inválidas sem encerrar o programa.
-* **Interface via Terminal**: Menu interativo com loop de repetição.
+## 🚀 Novidades da Versão 2.0
+- **Interface Colorida:** Uso da biblioteca `colorama` para uma experiência de usuário (UX) mais intuitiva.
+- **Sistema de Relatórios:** Soma automática de horas dividida por categorias (Teoria, Prática, Revisão).
+- **Tratamento de Exceções (Error Handling):** Proteção contra entradas inválidas, garantindo que o programa não encerre por erros de digitação.
+- **Persistência de Dados:** Armazenamento organizado em arquivo `.txt` com colunamento alinhado.
 
-## Tecnologias Utilizadas
-* **Python 3**
-* **Manipulação de Arquivos (I/O)**
-* **Dicionário e Funções**
+---
 
-## Como rodar
-1. Certifique-se de ter o Python instalado.
-2. Execute o comando: `python organizador.py`
+## 🎥 Demonstração na Prática
+https://github.com/user-attachments/assets/558ee090-10f2-4627-ac1d-967c6f3f5ebe
+[Vídeo do programa funcionando]
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+* **Python 3.12**
+* **Colorama:** Estilização e cores no terminal.
+* **OS:** Gerenciamento de arquivos e caminhos.
+
+---
+
+## ⚙️ Como Executar o Projeto
+
+Para testar o organizador na sua máquina, siga os passos abaixo:
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone [https://github.com/thurr-vini/organizador-estudos-python.git](https://github.com/thurr-vini/organizador-estudos-python.git)
